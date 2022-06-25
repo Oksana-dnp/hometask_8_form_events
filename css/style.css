@@ -1,0 +1,38 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.form{
+    padding: 15px;
+}
+.form__title{
+    font-size: 28px;
+    padding: 15px 0;
+}
+.form__text{
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+.input__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.input__inner .form__item{
+    flex: 1  33%;
+   
+} 
+.btn-move{
+    background-color: rgb(73, 199, 73);
+    cursor: pointer;
+    margin: 0 15px;
+}
+.form__item{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(180, 177, 177);
+}
+.form__input-change-placeholder {
+    width: 100%;
+}
