@@ -1,26 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <form action="#" class="form">
-    <h2 class="form__title">Task move</h2>
-    <p class="form__text">Значення переміщується з одного input в інший тільки якщо там є значення</p>
-    <div class="input__inner">
-    <input class="form__item form__input-move-value" type="text">
-    <button class="form__item btn-move" type="button">move</button>
-    <input class="form__item form__input-move-value" type="text">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form name="test" action="#" class="form">
+      <h2 class="form__title">Task move</h2>
+      <p class="form__text">
+        Значення переміщується з одного input в інший тільки якщо там є значення
+      </p>
+      <div class="input__inner">
+        <input class="form__item form__input-move-value" type="text" />
+        <button class="form__item btn-move" type="button">move</button>
+        <input class="form__item form__input-move-value" type="text" />
+      </div>
+      <h2 class="form__title">Task placeholder</h2>
+      <p class="form__text">
+        Значення переміщується в placeholder якщо там є значення
+      </p>
+      <input
+        class="form__item form__input-change-placeholder"
+        name="placeholderInner"
+        type="text"
+      />
+    </form>
+
+    <form action="#" class="reg-form" name="new-user">
+      <h3 class="reg-form__title" placeholder="type here">
+        Create your account
+      </h3>
+      <label class="reg-form__label" for="firstname">First Name</label>
+      <input
+        id="firstname"
+        class="reg-form__item"
+        type="text"
+        placeholder="type here"
+      />
+      <label class="reg-form__label" for="secondname">Second Name</label>
+      <input
+        id="secondname"
+        class="reg-form__item"
+        type="text"
+        placeholder="type here"
+      />
+      <input class="reg-form__item" type="email" placeholder="enter email" />
+      <div class="gender-inner reg-form__item">
+        <input
+          class="gender__item"
+          type="radio"
+          name="gender"
+          id="gender-man"
+        />
+        <label for="gender-man">man</label>
+        <input type="radio" name="gender" id="gender-woman" />
+        <label class="gender__item" for="gender-woman">woman</label>
+      </div>
+      <div class="position__inner reg-form__item">
+        <label for="position">Position</label>
+        <select class="position" name="position" id="position">
+          <option value="fronted">Fronted</option>
+          <option value="Backend">Backend</option>
+          <option value="QC/QA">QC/QA</option>
+        </select>
+        <label class="check" for="check">
+          <input type="checkbox" id="check" />
+          I agree all statements in Terms of service</label
+        >
+      </div>
+      <input class="reg-form__item submit" type="submit" value="Sign Up" />
+    </form>
+
+    <div class="user">
+     <div class="user__top">
+      <div class="user__top-img">
+        <img class="user__avatar" src="img/avatar.png" alt="user avatar">
+      </div>
+     </div>
+<div class="user__info">
+  <p class="user__name user__info-item">Alina Ivanove</p>
+  <p class="user__email user__info-item">aaa@gmail.com</p>
+  <p class="user__position user__info-item">Front end</p>
+</div>
+      <button class="user_btn-out" type="button">Sign out</button>
+      <ul class="user__social">
+        <li class="user__facebook user__social-item"><img src="img/facebook.svg" alt="facebook"></li>
+        <li class="user__github user__social-item"><img src="img/github.svg" alt="github"></li>
+        <li class="user__linkedin user__social-item"><img src="img/linkedin.svg" alt="linkedin"></li>
+      </ul>
+
     </div>
-    <h2 class="form__title">Task placeholder</h2>
-    <p class="form__text">Значення переміщується в placeholder якщо там є значення</p>
-    <input class="form__item form__input-change-placeholder" type="text">
-  </form>
-    
+
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
